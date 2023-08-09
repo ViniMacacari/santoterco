@@ -1,9 +1,15 @@
+/* Cabeçalho */
+
 body, section{
     font-family: 'Rubik', sans-serif;
     margin: 0;
     padding: 0;
     background-color: rgb(255, 255, 255);
   }
+
+a {
+  text-decoration: none;
+}
 
 .horizontal{
   display: flex;
@@ -35,6 +41,8 @@ li{
   cursor: pointer;
 }
 
+/* Cabeçalho */
+
 .tercos{
   display: flex;
   flex-direction: column;
@@ -42,11 +50,17 @@ li{
   align-items: center;
   font-size: 2vw;
   margin: 15px;
+  transition: 1s;
+  cursor: pointer;
 
   border-radius: 70px;
   background: #f0f0f0;
   box-shadow:  5px 5px 10px #c1c1c1,
                -5px -5px 10px #ffffff;
+}
+
+.tercos:hover{
+  transform: scale(1.1);
 }
 
 .img-terco{
@@ -76,18 +90,16 @@ section#sec1 {
   #ul-header{margin-right: 5px;} #texto-ca{flex: 1; margin: 0; margin-left: 5px;}
   
   .img-terco{
-    width: 30vw;
+    width: 50vw;
   }
 
   .sections{
-    flex-direction: column;
-    flex-wrap: nowrap;
-    height: calc(100vh - 75px);
+    height: 100vh;
   }
 
   .tercos{
     border-radius: 30px;
-    font-size: 3vw;
+    font-size: 3.5vw;
     margin: 10px;
   }
 }

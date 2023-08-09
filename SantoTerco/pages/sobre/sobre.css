@@ -1,0 +1,40 @@
+body, section{
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+  }
+
+a {
+  text-decoration: none;
+}
+
+.horizontal{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 0;
+  background-color: rgb(199, 199, 199);
+  position: relative;
+  z-index: 9999;
+
+  /* Neumorphism */
+
+  border-radius: 0px;
+  background: #f0f0f0;
+  box-shadow:  5px 5px 10px #c1c1c1,
+               -5px -5px 10px #ffffff;
+}
+
+.cor-texto{
+  color: #643b92;
+}
+
+#ul-header{margin-right: 25px;} #texto-ca{flex: 1; margin: 0; margin-left: 25px; font-size: 30px;}
+
+li{
+  display: inline-flex;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+  cursor: pointer;
+}
