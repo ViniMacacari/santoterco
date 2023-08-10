@@ -1,3 +1,21 @@
+// Identificar se está no mobile
+
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    function detectMobileDevice() {
+        if (/Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            return true; // É provável que seja um dispositivo móvel
+        } else {
+            return false; // Provavelmente não é um dispositivo móvel
+        }
+    }
+    
+    if (detectMobileDevice()) {
+        var elemento = document.getElementById("section1"); // Substitua "seu-elemento" pelo ID do elemento HTML que você deseja alterar
+        elemento.classList.add("mobile-device"); // Adicione uma classe CSS ao elemento
+    }
+    
+  }
+
 // Receber e definir variáveis
 
 const tituloTerco = document.getElementById("tercoTitulo");
@@ -37,7 +55,7 @@ if (id == 1) {
     oracaoFinal.textContent = "Deus Santo, Deus Forte, Deus imortal, tende piedade de nós e de todo o Mundo";
     console.log(id)
 } else if (id == 2) {
-        tituloTerco.textContent = "Como rezar o Terço da Misericórdia";
+        tituloTerco.textContent = "Como rezar o Terço do Amor";
         oracao1.textContent = "Reze um: Pai Nosso";
         oracao2.textContent = "Reze um: Ave-Maria";
         oracao3.textContent = "Reze um: Credo";
