@@ -5,6 +5,7 @@ body, section{
     margin: 0;
     padding: 0;
     background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
   }
 
 a {
@@ -39,16 +40,40 @@ li{
   margin-left: 2.5px;
   margin-right: 2.5px;
   cursor: pointer;
+  flex-wrap: wrap
 }
 
 /* Cabeçalho */
 
 .sec1 {
-  width: 50vw;
-  height: 100%;
+  width: 100vw;
+  height: auto;
   padding-left: 25px;
   padding-right: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   /* background-color: #643b92; */
+}
+
+.divoracoes{
+  height: calc(100vh - 75px);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  flex: 1;
+}
+
+.imgterco{
+  height: calc(100vh - 75px);  
+  position: relative;
+  width: auto;
+}
+
+.explicacaoterco{
+  width: 38vw;
+  padding-right: 20px;
 }
 
 .margin0{
@@ -59,15 +84,24 @@ li{
   font-size: 20px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .sec1 {
-    width: 100%;
-    white-space: normal;
-    word-wrap: break-word;
+    width: 98vw;  
+    height: calc(100vh - 100px);  
+    height: auto;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    flex-direction: column;
+  }
+  .explicacaoterco{
+    width: 80vw;
+  }
+  .divoracoes{
+    width: calc(100vw - 30px);
+    z-index: 99999;
   }
 }
 
 .mobile-device {
-  background-color: blue; /* Exemplo: alterar a cor de fundo para azul em dispositivos móveis */
-  font-size: 16px; /* Exemplo: alterar o tamanho da fonte para 16 pixels em dispositivos móveis */
+  border-radius: 0px;
 }
