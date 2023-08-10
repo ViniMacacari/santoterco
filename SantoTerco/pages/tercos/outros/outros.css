@@ -8,6 +8,10 @@ body, section{
     overflow-x: hidden;
   }
 
+body {
+  height: 100vh;
+}
+
 a {
   text-decoration: none;
 }
@@ -47,7 +51,6 @@ li{
 
 .sec1 {
   width: 100vw;
-  height: auto;
   padding-left: 25px;
   padding-right: 25px;
   display: flex;
@@ -57,18 +60,20 @@ li{
 }
 
 .divoracoes{
-  height: calc(100vh - 75px);
+  height: auto;
   position: relative;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   flex: 1;
+  /* background-color: aqua; */
 }
 
 .imgterco{
-  height: calc(100vh - 75px);  
+  height: auto;
   position: relative;
   width: auto;
+  /* background-color: aquamarine; */
+  margin-bottom: 40px;
 }
 
 .explicacaoterco{
@@ -96,6 +101,9 @@ li{
   .explicacaoterco{
     width: 80vw;
   }
+  .imgterco {
+    height: 80vw;
+  }
   .divoracoes{
     width: calc(100vw - 30px);
     z-index: 99999;
@@ -104,4 +112,21 @@ li{
 
 .mobile-device {
   border-radius: 0px;
+}
+
+footer{
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  border-radius: 0px;
+  background: #f0f0f0;
+  box-shadow:  -5px -5px -10px #c1c1c1,
+               5px 5px 10px #ffffff;
+  padding: 20px;
+  z-index: 99999999;
+}
+
+.copyr{
+  font-size: 20px;
 }
