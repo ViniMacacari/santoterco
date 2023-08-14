@@ -121,8 +121,8 @@ footer{
   position: fixed;
   border-radius: 0px;
   background: #f0f0f0;
-  box-shadow:  -5px -5px -10px #c1c1c1,
-               5px 5px 10px #ffffff;
+  box-shadow:  5px 5px 10px #c1c1c1,
+               -5px -5px 10px #ffffff;
   padding: 20px;
   z-index: 99999999;
 }

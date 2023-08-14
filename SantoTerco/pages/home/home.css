@@ -5,6 +5,7 @@ body, section{
     margin: 0;
     padding: 0;
     background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
   }
 
 a {
@@ -43,8 +44,9 @@ li{
 
 /* Cabeçalho */
 
-.tercos{
+.tercos{ /* Card de terços */
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -57,11 +59,89 @@ li{
   background: #f0f0f0;
   box-shadow:  5px 5px 10px #c1c1c1,
                -5px -5px 10px #ffffff;
+
+  /* Anim */
+  perspective: 700px;
 }
 
 .tercos:hover{
   transform: scale(1.1);
+} /* Card de terços */
+
+/* -----------Card Terço Mariano--------------- */
+
+.terco-mariano{
+  transition: 0.5s ease;
+  transform-style: preserve-3d;
+  transform-origin: center;
 }
+
+/* .terco-mariano:hover{
+  transform: rotateY(180deg);
+} */
+
+.terco-mariano:hover .front{
+  display: none;
+}
+
+.terco-mariano:hover .back{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(25vw - 30px);
+}
+
+.misterios{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.misterios button{
+  width: 20vw;
+}
+
+.front{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.back{
+  padding: 15px;
+  cursor: default;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+
+.back h2{
+  font-size: 2vw;
+}
+
+.seta{
+  width: 3vw;
+}
+
+.buterco{
+  font-family: 'Rubik', sans-serif;
+  text-decoration: none;
+  border-radius: 70px;
+  border: none;
+  background-color: #643b92;
+  color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Card Terço Mariano */
 
 .img-terco{
   width: 25vw;
@@ -81,6 +161,7 @@ section#sec1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 1s;
   /* background-color: aqua; */
 }
 
@@ -95,13 +176,55 @@ section#sec1 {
 
   .sections{
     height: 100vh;
+    display: flex;
+    transition: 0.5s;
   }
 
   .tercos{
     border-radius: 30px;
     font-size: 3.5vw;
-    margin: 10px;
+    margin: 20px;
+    transition: 0.5s;
+  }
+  
+  .seta{
+    width: 6vw;
+  }
+
+  .back h2{
+    font-size: 3vw;
+  }
+
+  .terco-mariano:hover .back{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(50vw - 30px);
+  }
+  .misterios button{
+    width: 45vw;
+    height: 4.75vw;
+  }
+
+  .t5{
+   margin-top: 50px; /* ou qualquer valor necessário para criar espaço */
+    transition: margin-top 0.5s ease; /* Adiciona uma transição suave à margem */
   }
 }
 
 /* PRA CELULAR */
+
+/* Congelar para animacao */
+
+.freeze-page {
+  pointer-events: none; /* Desabilita interações */
+  overflow: hidden; /* Impede a rolagem */
+  cursor: not-allowed; /* Altera o cursor */
+}
+
+.no-hover * {
+  pointer-events: none !important;
+}
+

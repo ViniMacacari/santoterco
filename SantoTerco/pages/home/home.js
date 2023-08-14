@@ -31,3 +31,4 @@ function redirecionarTercoAmor() {
 // Quando clicado...
 tercoAmor.addEventListener('click', redirecionarTercoAmor);
 tercoMisericordia.addEventListener('click', redirecionarTercoMisericordia);
+
