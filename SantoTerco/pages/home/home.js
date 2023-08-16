@@ -1,3 +1,31 @@
+// Identificar se está no mobile
+
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+  function detectMobileDevice() {
+      if (/Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+          return true; // eh um dispositivo móvel
+      } else {
+          return false; // não eh um dispositivo móvel
+      }
+  }
+  
+  if (detectMobileDevice()) {
+    const tercoMariano = document.querySelector('.terco-mariano');
+
+    tercoMariano.addEventListener('mouseenter', function() {
+      setTimeout(function() {
+        tercoMariano.classList.add('hide-content');
+      }, 500); // Atraso de 0.5s
+    });
+    
+    tercoMariano.addEventListener('mouseleave', function() {
+      tercoMariano.classList.remove('hide-content');
+    });
+    
+  }
+  
+}
+
 // Passar dados para qual terço for
 
 // Selecionar a div pelo id
@@ -83,4 +111,3 @@ misteriosLuminosos.addEventListener('click', redirecionarMisteriosLuminosos);
 misteriosGloriosos.addEventListener('click', redirecionarMisteriosGloriosos);
 tercoAmor.addEventListener('click', redirecionarTercoAmor);
 tercoMisericordia.addEventListener('click', redirecionarTercoMisericordia);
-

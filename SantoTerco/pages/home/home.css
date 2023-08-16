@@ -208,6 +208,15 @@ section#sec1 {
     align-items: center;
     width: calc(50vw - 30px);
   }
+
+  .terco-mariano.hide-content .front{
+    display: none;
+  }
+
+  .terco-mariano.hide-content .back { 
+    display: flex;
+  }
+
   .misterios button{
     width: 45vw;
     height: 4.75vw;
