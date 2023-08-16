@@ -11,17 +11,17 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
   
   if (detectMobileDevice()) {
     const tercoMariano = document.querySelector('.terco-mariano');
+    tercoMariano.classList.remove('displaya');
 
     tercoMariano.addEventListener('mouseenter', function() {
       setTimeout(function() {
         tercoMariano.classList.add('hide-content');
-      }, 1500); // Atraso de 0.5s
+      }, 1000); // Atraso de 1s
     });
-    
+
     tercoMariano.addEventListener('mouseleave', function() {
       tercoMariano.classList.remove('hide-content');
     });
-    tercoMariano.classList.remove('displaya');
   }
   
 }

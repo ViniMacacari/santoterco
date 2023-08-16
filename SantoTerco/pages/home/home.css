@@ -87,6 +87,7 @@ li{
 .displaya:hover .back{
   display: flex;
 }
+
 .terco-mariano:hover .back{
   flex-direction: column;
   justify-content: center;
@@ -203,20 +204,11 @@ section#sec1 {
   }
 
   .terco-mariano:hover .back{
-    position: relative;
-    display: flex;
+    position: relative; 
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: calc(50vw - 30px);
-  }
-
-  .terco-mariano.hide-content .front{
-    display: none;
-  }
-
-  .terco-mariano.hide-content .back { 
-    display: flex;
   }
 
   .misterios button{
@@ -227,6 +219,14 @@ section#sec1 {
   .t5{
    margin-top: 50px; /* ou qualquer valor necessário para criar espaço */
     transition: 0.5s ease; /* Adiciona uma transição suave à margem */
+  }
+
+  .terco-mariano.hide-content .front{
+    display: none;
+  }
+  
+  .terco-mariano.hide-content .back { 
+    display: flex;
   }
 }
 
