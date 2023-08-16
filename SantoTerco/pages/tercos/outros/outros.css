@@ -103,6 +103,7 @@ li{
   }
   .imgterco {
     height: 80vw;
+    padding-bottom: 25px;
   }
   .divoracoes{
     width: calc(100vw - 30px);

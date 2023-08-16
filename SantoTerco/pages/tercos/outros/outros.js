@@ -3,15 +3,15 @@
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     function detectMobileDevice() {
         if (/Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            return true; // É provável que seja um dispositivo móvel
+            return true; // eh um dispositivo móvel
         } else {
-            return false; // Provavelmente não é um dispositivo móvel
+            return false; // não eh um dispositivo móvel
         }
     }
     
     if (detectMobileDevice()) {
-        var elemento = document.getElementById("section1"); // Substitua "seu-elemento" pelo ID do elemento HTML que você deseja alterar
-        elemento.classList.add("mobile-device"); // Adicione uma classe CSS ao elemento
+        var elemento = document.getElementById("section1");
+        elemento.classList.add("mobile-device"); // classe adicionada
     }
     
   }
@@ -47,12 +47,12 @@ if (id == 1) {
     oracao2.textContent = "Reze um: Ave-Maria";
     oracao3.textContent = "Reze um: Credo";
 
-    contasGrandes.textContent = "Reze: Eterno Pai, eu Vos ofereço o Corpo e o Sangue, a Alma e a Divindade de Vosso muito amado Filho, Nosso Senhor Jesus Cristo, em expiação dos nossos pecados e dos pecados de todo o Mundo.";
-    contasPequenas.textContent = "Reze: Pela Sua dolorosa paixão, tende Misericórdia de nós e de todo o Mundo.";
+    contasGrandes.textContent = "Reze: Eterno Pai, eu Vos ofereço o Corpo e o Sangue, a Alma e a Divindade de Nosso Senhor Jesus Cristo, em expiação dos nossos pecados e dos pecados do Mundo inteiro.";
+    contasPequenas.textContent = "Reze: Pela Sua dolorosa paixão, tende Misericórdia de nós e do Mundo inteiro.";
 
     finalDezena.textContent = "Ó Sangue e Água que jorrastes do Coração de Jesus como fonte de misericórdia para nós: eu confio em Vós!";
 
-    oracaoFinal.textContent = "Deus Santo, Deus Forte, Deus imortal, tende piedade de nós e de todo o Mundo";
+    oracaoFinal.textContent = "Deus Santo, Deus Forte, Deus imortal, tende piedade de nós e do Mundo inteiro";
     console.log(id)
 } else if (id == 2) {
         tituloTerco.textContent = "Como rezar o Terço do Amor";
@@ -67,4 +67,6 @@ if (id == 1) {
 
         oracaoFinal.textContent = "Reze: Sagrado Coração de Jesus, fazei que eu Vos ame cada vez mais";
         console.log(id)
+    } else {
+        window.location.href = "../../../pages/home/home.html";
     }

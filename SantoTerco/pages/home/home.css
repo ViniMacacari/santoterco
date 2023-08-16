@@ -185,6 +185,11 @@ section#sec1 {
     font-size: 3.5vw;
     margin: 20px;
     transition: 0.5s;
+    height: 65vw;
+  }
+
+  .tercos:hover {
+    transform: scale(1.1);
   }
   
   .seta{
@@ -210,7 +215,7 @@ section#sec1 {
 
   .t5{
    margin-top: 50px; /* ou qualquer valor necessário para criar espaço */
-    transition: margin-top 0.5s ease; /* Adiciona uma transição suave à margem */
+    transition: 0.5s ease; /* Adiciona uma transição suave à margem */
   }
 }
 

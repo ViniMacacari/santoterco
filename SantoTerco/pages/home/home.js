@@ -1,7 +1,10 @@
 // Passar dados para qual terço for
 
 // Selecionar a div pelo id
-const tercoMariano = document.getElementById('mariano');
+const misteriosGozosos = document.getElementById('gozosos');
+const misteriosDolorosos = document.getElementById('dolorosos');
+const misteriosLuminosos = document.getElementById('luminosos');
+const misteriosGloriosos = document.getElementById('gloriosos');
 const tercoMisericordia = document.getElementById('misericordia');
 const tercoAmor = document.getElementById('amor');
 
@@ -28,7 +31,56 @@ function redirecionarTercoAmor() {
   window.location.href = urlOutros;
 }
 
+// Função pra redirecionar
+function redirecionarMisteriosGozosos() {
+  const dataMisterio = {
+    misterio: 'Gosozos',
+    id: 1
+  };
+
+  const queryString = new URLSearchParams(dataMisterio).toString();
+  const urlMariano = `../../pages/tercos/mariano/mariano.html?${queryString}`;
+  window.location.href = urlMariano;
+}
+
+function redirecionarMisteriosDolorosos() {
+  const dataMisterio = {
+    misterio: 'Dolorosos',
+    id: 2
+  };
+
+  const queryString = new URLSearchParams(dataMisterio).toString();
+  const urlMariano = `../../pages/tercos/mariano/mariano.html?${queryString}`;
+  window.location.href = urlMariano;
+}
+
+function redirecionarMisteriosLuminosos() {
+  const dataMisterio = {
+    misterio: 'Luminosos',
+    id: 3
+  };
+
+  const queryString = new URLSearchParams(dataMisterio).toString();
+  const urlMariano = `../../pages/tercos/mariano/mariano.html?${queryString}`;
+  window.location.href = urlMariano;
+}
+
+function redirecionarMisteriosGloriosos() {
+  const dataMisterio = {
+    misterio: 'Gloriosos',
+    id: 4
+  };
+
+  const queryString = new URLSearchParams(dataMisterio).toString();
+  const urlMariano = `../../pages/tercos/mariano/mariano.html?${queryString}`;
+  window.location.href = urlMariano;
+}
+
 // Quando clicado...
+misteriosGozosos.addEventListener('click', redirecionarMisteriosGozosos);
+misteriosDolorosos.addEventListener('click', redirecionarMisteriosDolorosos);
+misteriosLuminosos.addEventListener('click', redirecionarMisteriosLuminosos);
+misteriosGloriosos.addEventListener('click', redirecionarMisteriosGloriosos);
 tercoAmor.addEventListener('click', redirecionarTercoAmor);
 tercoMisericordia.addEventListener('click', redirecionarTercoMisericordia);
 
