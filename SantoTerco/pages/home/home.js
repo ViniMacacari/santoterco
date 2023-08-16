@@ -15,13 +15,13 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     tercoMariano.addEventListener('mouseenter', function() {
       setTimeout(function() {
         tercoMariano.classList.add('hide-content');
-      }, 500); // Atraso de 0.5s
+      }, 1500); // Atraso de 0.5s
     });
     
     tercoMariano.addEventListener('mouseleave', function() {
       tercoMariano.classList.remove('hide-content');
     });
-    
+    tercoMariano.classList.remove('displaya');
   }
   
 }

@@ -80,12 +80,14 @@ li{
   transform: rotateY(180deg);
 } */
 
-.terco-mariano:hover .front{
+.displaya:hover .front{
   display: none;
 }
 
-.terco-mariano:hover .back{
+.displaya:hover .back{
   display: flex;
+}
+.terco-mariano:hover .back{
   flex-direction: column;
   justify-content: center;
   align-items: center;
