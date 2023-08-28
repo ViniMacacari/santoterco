@@ -16,7 +16,7 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     tercoMariano.addEventListener('mouseenter', function() {
       setTimeout(function() {
         tercoMariano.classList.add('hide-content');
-      }, 50); // Atraso de 50ms
+      }, 50); // OBS PROF: Atraso de 50ms para versão mobile
     });
 
     tercoMariano.addEventListener('mouseleave', function() {
