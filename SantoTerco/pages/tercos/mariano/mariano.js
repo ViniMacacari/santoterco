@@ -86,10 +86,10 @@ if (id == 1){
     passagem1.innerHTML = "Depois de ser batizado, Jesus logo saiu da água. Então o céu se abriu, e Jesus viu o Espírito de Deus, descendo como pomba e pousando sobre ele. E do céu veio uma voz dizendo: 'Este é o meu Filho amado, que muito me agrada'. <br> (Mt 3: 16-17)";
 
     titulo2.textContent = "No Segundo Mistério contemplamos o Primeiro milagre de Jesus transformando a água em vinho nas bodas de Caaná.";
-    passagem2.innerHTML = "Três dias depois, houve uma festa de casamento em Caná da Galiléia, e a mãe de Jesus estava aí. Jesus também tinha sido convidado para essa festa de casamento, junto com seus discípulos. Faltou vinho, e a mãe de Jesus lhe disse: 'Eles não têm mais vinho!' Jesus respondeu: 'Mulher, que existe entre nós? Minha hora ainda não chegou'. A mãe de Jesus disse aos que estavam servindo: 'Façam o que ele mandar'. <br> (Jo 2: 1-5)";
+    passagem2.innerHTML = "Três dias depois, houve uma festa de casamento em Caaná da Galiléia, e a mãe de Jesus estava alí. Jesus também tinha sido convidado para essa festa de casamento, junto com seus discípulos. Faltou vinho, e a mãe de Jesus lhe disse: 'Eles não têm mais vinho!' Jesus respondeu: 'Mulher, que existe entre nós? Minha hora ainda não chegou'. A mãe de Jesus disse aos que estavam servindo: 'Façam o que ele mandar'. <br> (Jo 2: 1-5)";
     
     titulo3.textContent = "No Terceiro Mistério contemplamos a Anunciação do Reino de Deus e o convite à conversão.";
-    passagem3.innerHTML = "O tempo já se cumpriu e o Rino de Deus está próximo. Convertam-se e acreditem na Boa Notícia. <br> (Mc 1: 15)";
+    passagem3.innerHTML = "O tempo já se cumpriu e o Reino de Deus está próximo. Convertam-se e acreditem na Boa Notícia. <br> (Mc 1: 15)";
     
     titulo4.textContent = "No Quarto Mistério contemplamos a transfiguração de Nosso Senhor no Monte Thabor.";
     passagem4.innerHTML = "Seis dias depois, Jesus tomou consigo Pedro, os irmãos Tiago e João, e os levou a um lugar à parte, sobre uma alta montanha. E se transfigurou diante deles: o seu rosto brilhou como o sol, e as suas roupas ficaram brancas como a luz. <br> (Mt 17: 1-2)";
