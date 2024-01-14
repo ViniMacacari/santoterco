@@ -1,18 +1,19 @@
 /* Cabeçalho */
 
-body, section{
-    font-family: 'Rubik', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(255, 255, 255);
-    overflow-x: hidden;
-  }
+body,
+section {
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+}
 
 a {
   text-decoration: none;
 }
 
-.horizontal{
+.horizontal {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
@@ -25,17 +26,26 @@ a {
 
   border-radius: 0px;
   background: #f0f0f0;
-  box-shadow:  5px 5px 10px #c1c1c1,
-               -5px -5px 10px #ffffff;
+  box-shadow: 5px 5px 10px #c1c1c1,
+    -5px -5px 10px #ffffff;
 }
 
-.cor-texto{
+.cor-texto {
   color: #643b92;
 }
 
-#ul-header{margin-right: 25px;} #texto-ca{flex: 1; margin: 0; margin-left: 25px; font-size: 30px;}
+#ul-header {
+  margin-right: 25px;
+}
 
-li{
+#texto-ca {
+  flex: 1;
+  margin: 0;
+  margin-left: 25px;
+  font-size: 30px;
+}
+
+li {
   display: inline-flex;
   margin-left: 2.5px;
   margin-right: 2.5px;
@@ -44,7 +54,8 @@ li{
 
 /* Cabeçalho */
 
-.tercos{ /* Card de terços */
+.tercos {
+  /* Card de terços */
   display: flex;
   position: relative;
   flex-direction: column;
@@ -57,20 +68,22 @@ li{
 
   border-radius: 70px;
   background: #f0f0f0;
-  box-shadow:  5px 5px 10px #c1c1c1,
-               -5px -5px 10px #ffffff;
+  box-shadow: 5px 5px 10px #c1c1c1,
+    -5px -5px 10px #ffffff;
 
   /* Anim */
   perspective: 700px;
 }
 
-.tercos:hover{
+.tercos:hover {
   transform: scale(1.1);
-} /* Card de terços */
+}
+
+/* Card de terços */
 
 /* -----------Card Terço Mariano--------------- */
 
-.terco-mariano{
+.terco-mariano {
   transition: 0.5s ease;
   transform-style: preserve-3d;
   transform-origin: center;
@@ -80,32 +93,32 @@ li{
   transform: rotateY(180deg);
 } */
 
-.displaya:hover .front{
+.displaya:hover .front {
   display: none;
 }
 
-.displaya:hover .back{
+.displaya:hover .back {
   display: flex;
 }
 
-.terco-mariano:hover .back{
+.terco-mariano:hover .back {
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: calc(25vw - 30px);
 }
 
-.misterios{
+.misterios {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.misterios button{
+.misterios button {
   width: 20vw;
 }
 
-.front{
+.front {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -113,7 +126,7 @@ li{
   z-index: 1;
 }
 
-.back{
+.back {
   padding: 15px;
   cursor: default;
   display: none;
@@ -123,15 +136,15 @@ li{
   z-index: 0;
 }
 
-.back h2{
+.back h2 {
   font-size: 2vw;
 }
 
-.seta{
+.seta {
   width: 3vw;
 }
 
-.buterco{
+.buterco {
   font-family: 'Rubik', sans-serif;
   text-decoration: none;
   border-radius: 70px;
@@ -146,12 +159,13 @@ li{
 
 /* Card Terço Mariano */
 
-.img-terco{
+.img-terco {
   width: 25vw;
 }
 
-.sections{
+.sections {
   position: relative;
+  padding: 0px;
   margin: 0;
   width: 100vw;
   height: calc(100vh - 75px);
@@ -171,19 +185,27 @@ section#sec1 {
 /* PRA CELULAR */
 
 @media screen and (max-width: 600px) {
-  #ul-header{margin-right: 5px;} #texto-ca{flex: 1; margin: 0; margin-left: 5px;}
-  
-  .img-terco{
+  #ul-header {
+    margin-right: 5px;
+  }
+
+  #texto-ca {
+    flex: 1;
+    margin: 0;
+    margin-left: 5px;
+  }
+
+  .img-terco {
     width: 50vw;
   }
 
-  .sections{
+  .sections {
     height: 100vh;
     display: flex;
     transition: 0.5s;
   }
 
-  .tercos{
+  .tercos {
     border-radius: 30px;
     font-size: 3.5vw;
     margin: 20px;
@@ -194,38 +216,40 @@ section#sec1 {
   .tercos:hover {
     transform: scale(1.1);
   }
-  
-  .seta{
+
+  .seta {
     width: 6vw;
   }
 
-  .back h2{
+  .back h2 {
     font-size: 3vw;
   }
 
-  .terco-mariano:hover .back{
-    position: relative; 
+  .terco-mariano:hover .back {
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: calc(50vw - 30px);
   }
 
-  .misterios button{
+  .misterios button {
     width: 45vw;
     height: 4.75vw;
   }
 
-  .t5{
-   margin-top: 50px; /* ou qualquer valor necessário para criar espaço */
-    transition: 0.5s ease; /* Adiciona uma transição suave à margem */
+  .t5 {
+    margin-top: 50px;
+    /* ou qualquer valor necessário para criar espaço */
+    transition: 0.5s ease;
+    /* Adiciona uma transição suave à margem */
   }
 
-  .terco-mariano.hide-content .front{
+  .terco-mariano.hide-content .front {
     display: none;
   }
-  
-  .terco-mariano.hide-content .back { 
+
+  .terco-mariano.hide-content .back {
     display: flex;
   }
 }
@@ -235,12 +259,14 @@ section#sec1 {
 /* Congelar para animacao */
 
 .freeze-page {
-  pointer-events: none; /* Desabilita interações */
-  overflow: hidden; /* Impede a rolagem */
-  cursor: not-allowed; /* Altera o cursor */
+  pointer-events: none;
+  /* Desabilita interações */
+  overflow: hidden;
+  /* Impede a rolagem */
+  cursor: not-allowed;
+  /* Altera o cursor */
 }
 
 .no-hover * {
   pointer-events: none !important;
 }
-
